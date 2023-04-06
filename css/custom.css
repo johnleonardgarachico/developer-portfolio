@@ -1,0 +1,66 @@
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.text-lightseagreen {
+  color: lightseagreen;
+}
+
+.text-coral {
+  color: coral;
+}
+
+#my-name {
+  color: coral;
+  font-weight: bold;
+}
+
+#job-title {
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+#my-name:hover {
+  color: lightseagreen;
+}
+
+#job-title:hover {
+  color: coral;
+}
+
+.btn-primary {
+  background-color: lightseagreen !important;
+  border-color: lightseagreen !important;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: coral !important;
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: lightseagreen !important;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: lightseagreen !important;
+}
+
+#welcome-photo-top {
+  display: none;
+}
+
+#welcome-photo-right {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  #welcome-photo-top {
+    display: block;
+  }
+  #welcome-photo-right {
+    display: none;
+  }
+}
