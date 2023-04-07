@@ -1,5 +1,11 @@
 body {
   font-family: "Helvetica", sans-serif;
+  background-color: white;
+}
+
+.navHeadFont {
+  font-size: 1.2rem;
+  margin-right: 40px;
 }
 
 .text-lightseagreen {
@@ -56,11 +62,19 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #welcome-photo-top {
     display: block;
   }
   #welcome-photo-right {
     display: none;
   }
+  .navHeadFont {
+    margin-right: 0;
+  }
+}
+
+.welcome-carousel-image1 {
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
+  background-image: url("images/tech-stacks/microsoft-net.png");
 }

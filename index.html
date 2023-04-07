@@ -4,12 +4,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>John Leonard Garachico</Title>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/de860acf1a.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="css/bootstrap-override.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/custom-animation.css">
     </head>
 
     <body>
@@ -18,7 +22,7 @@
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <div class="d-flex flex-row align-items-center">
-                            <img src="images/portfolio-logo.png" style="float: left;" width="100" height="100" class="rounded-circle me-2" alt="John Leonard Garachico portfolio logo">
+                            <img src="images/portfolio-logo.png" style="float: left;" height="100" class="rounded-circle me-2 w-100" alt="John Leonard Garachico portfolio logo">
                             <h1 style="font-family: Fuggles, cursive">Chico</h1>
                         </div>
                     </a>
@@ -29,15 +33,15 @@
                     </button>
     
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="nav navbar-nav ms-auto me-5">
-                            <li class="nav-item ">
-                                <a class="nav-link active" href="index.html"><h4>Home</h4></a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link active" href="resume.html"><h4>Resume</h4></a>
+                        <ul class="nav navbar-nav ms-auto align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link navHeadFont" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <button class="btn btn-primary btn-lg" type="button">Contact</button>
+                                <a class="nav-link navHeadFont" href="resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-primary btn-lg navHeadFont" type="button">Contact</button>
                             </li>
                         </ul>
                     </div>
@@ -46,9 +50,9 @@
         </header>
 
         <main class="container">
-            <div class="row">
+            <div id="welcome-page" class="row">
                 <div id="welcome-photo-top" class="col-md-6 align-self-center">
-                    <img src="images/welcome-photo.jpg" width="350" height="400" class="rounded mx-auto d-block" alt="">
+                    <img src="images/welcome-photo.jpg" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-md-6 pt-3 justify-content-start">
@@ -89,8 +93,132 @@
                 <div id="welcome-photo-right" class="col-md-6 align-self-center">
                     <img src="images/welcome-photo.jpg" width="400" height="400" class="rounded mx-auto d-block" alt="">
                 </div>
+
+                <div class="animate fadeInDown col-12 d-flex justify-content-center pt-3 mb-3">
+                    <a href="#tech-stack">
+                        <i class="fas fa-chevron-down fa-4x mb-3"></i>
+                    </a>
+                </div>
             </div>
 
+            <div id="tech-stack" class="container">
+                <div class="d-flex justify-content-center mb-5">
+                    <h1 class="display-3"><b>My Tech Stack</b></h1>
+                </div>
+
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/dotnet-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/azure-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/docker-logo-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/html-5-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/css-3-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/bootstrap-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/csharp-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/blazor-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-4">
+                            <div class="d-flex justify-content-center">
+                                <div class="card border-0" style="width: 10rem; height: 10rem;">
+                                    <img src="images/tech-stacks/sql-database-generic-svgrepo-com.svg" class="card-img h-200 my-auto" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <br><br><br><br><br><br>
+            </div>
         </main>
+
+        <script src="javascript/carousel-multi-slide.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
+
+    
 </html>
