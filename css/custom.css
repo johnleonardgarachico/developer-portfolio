@@ -8,6 +8,10 @@ body {
   margin-right: 40px;
 }
 
+.text-gray {
+  color: gray;
+}
+
 .text-lightseagreen {
   color: lightseagreen;
 }
