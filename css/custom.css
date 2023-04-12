@@ -76,9 +76,41 @@ body {
   .navHeadFont {
     margin-right: 0;
   }
+  #experience-year {
+    width: 80px !important;
+    min-width: 80px !important;
+    margin-left: 0px !important;
+  }
+  .resume-vertical-line {
+    margin-left: 10px !important;
+    padding-left: 10px !important;
+  }
 }
 
 .welcome-carousel-image1 {
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
   background-image: url("images/tech-stacks/microsoft-net.png");
+}
+
+.resume-vertical-line {
+  border-left: 6px solid gray;
+  height: 80px;
+  margin-left: 50px;
+  padding-left: 50px;
+}
+
+#experience-year {
+  height: 100px;
+  width: 80px;
+
+  margin-left: 30px;
+}
+
+#resume-section-header {
+  border-left: 6px solid aquamarine;
+  height: 100%;
+}
+
+#resume-info {
+  background-image: linear-gradient(aquamarine, rgb(180,250,350));
 }
